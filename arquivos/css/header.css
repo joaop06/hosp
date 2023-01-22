@@ -1,0 +1,78 @@
+:root{
+    /*Tema Light*/
+        --azul-base: #49c1fd;
+        --base: #0b2a5a;
+        --titulo: #00ccff;
+        --base-card: rgb(19, 69, 160);
+        --base-card-input: rgb(32, 137, 197);
+}
+
+header{
+    position: fixed;
+    
+    width: 15%;
+    height: 100vh;
+    margin: auto 0%;
+}
+
+#conteudo_header{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid gray;
+    
+    width: 100%;
+    height: 90%;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#bloco_sup{
+    width: 100%;
+    height: 90%;
+    padding-left: 5%;
+}
+
+#logo{
+    margin-top: 15%;
+    margin-left: 7%;
+    font-size: 1vw;
+    letter-spacing: 7px;
+}
+
+#logo > a{
+    color: var(--azul-base);
+}
+
+.cont_header{
+    width: 70%;
+    margin-top: 15%;
+}
+
+.opcao_header{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 12%;
+}
+
+.opcao_header > h6{
+    margin-left: 5%;
+    font-size: 1vw;
+}
+
+.opcao_header > img{
+    width: 1.9em;
+}
+
+
+
+#bloco_inf{
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}

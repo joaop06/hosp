@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="../../img/icons/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="main-cadastro">
+            <div class="left-cadastro">
+                <h1>Junte-se a nós!</h1>
+                <img src="../../img/logo/logo.png" alt="">
+            </div>
+
+            <div class="right-cadastro">
+                <form action="../login/login.html">
+                    <div class="card-cadastro">
+
+                        <h1>CADASTRO</h1>
+
+                        <div class="grupo-input">
+                            <div id="nome-user">
+                                <div class="info" id="nome">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" name="nome" placeholder="Nome" required>
+                                </div>
+    
+                                <div class="info" id="username">
+                                    <label for="nome_de_usuario">Usuário</label>
+                                    <input type="nome_de_usuario" name="nome_de_usuario" placeholder="Nome de Usuário" required>
+                                </div>
+                            </div>
+    
+                            <div class="info">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="E-mail" required>
+                            </div>
+    
+                            <div class="info">
+                                <label for="password">Senha</label>
+                                <input type="password" name="password" placeholder="Senha" required>
+                            </div>
+
+                            <div class="genero">
+                                <h2>Gênero</h2>
+    
+                                <div class="grupo-genero">
+                                    <div class="genero-input">
+                                        <label for="feminino">Feminino</label>
+                                        <input type="radio" id="feminino" name="genero">
+                                    </div>
+    
+                                    <div class="genero-input">
+                                        <label for="masculino">Masculino</label>
+                                        <input type="radio" id="masculino" name="genero">
+                                    </div>
+    
+                                    <div class="genero-input">
+                                        <label for="outros">Outros</label>
+                                        <input type="radio" id="outros" name="genero">
+                                    </div>
+    
+                                    <div class="genero-input">
+                                        <label for="none">Prefiro não dizer</label>
+                                        <input type="radio" id="none" name="genero">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <button class="botao-cadastro">Cadastre-se</button>
+
+                        <span class="link-login"><span>Já possui cadastro? <a href="../login/login.html">Entre</a></span></span>
+
+                    </div>
+                <form>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var elemento = document.querySelector("input");
+        elemento.onfocus = function(){
+            elemento.placeholder = "";
+        };
+    </script>
+</body>
+</html>

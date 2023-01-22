@@ -1,0 +1,285 @@
+:root{
+/*Tema Light*/
+    --azul-base: #49c1fd;
+    --base: #0b2a5a;
+    --titulo: #00ccff;
+    --base-card: rgb(19, 69, 160);
+    --base-card-input: rgb(32, 137, 197);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--base);
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 300px;
+}
+
+.main-login{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.left-login{
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+
+.left-login > h1{
+    color: var(--titulo);
+    font-size: 1.75vw;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.left-login > img{
+    width: 80%;
+}
+
+.right-login{
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    box-sizing: border-box;
+}
+
+.card-login{
+    display: flex;
+    box-sizing: border-box;
+    width: 34vw;
+    height: 100%;
+    margin-top: 0%;
+    background-color: var(--base-card);
+    border-radius: 20px;
+    padding: 5% 8% 8% 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-login > h1{
+    color: white;
+    font-size: 1.1vw;
+    margin: 0;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 15px 0px;
+}
+
+.info > label{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+.info > input{
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    background-color: var(--base-card-input);
+    width: 100%;
+    padding: 2.9%;
+    box-sizing: border-box;
+    font-weight: bold;
+    box-shadow: 0px 10px 40px #00000056;
+    font-size: 0.9vw;
+    color: white;
+}
+
+.info > input:hover{
+    background-color: rgb(101, 157, 189);
+    transition: 0.2s;
+}
+
+.info > input:focus{
+    outline: 2px solid white;
+    background-color: rgb(101, 157, 189);
+}
+
+.info > input::placeholder{
+    color: white;
+    opacity: 0.75;
+}
+
+.botao-login{
+    width: 100%;
+    padding: 3%;
+    margin-top: 10%;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1vw;
+    font-size: 0.8vw;
+    background-color: var(--azul-base);
+    box-shadow: 0px 10px 40px -12px #00000056;
+    box-sizing: border-box;
+}
+
+.link-cadastro{
+    color: white;
+    margin-top: 6%;
+    font-size: 0.85vw;
+}
+
+.link-cadastro > span > a{
+    text-decoration: underline;
+    color: var(--titulo);
+}
+
+@media (max-width: 1500px){
+    form{
+        height: 50vh;
+    }
+
+}
+
+@media (max-width: 1250px){
+    form{
+        height: 45vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .left-login{
+        display: none;
+    }
+
+    .right-login{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    form{
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .card-login{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-login > h1{
+        font-size: 2.2vw;
+    }
+
+    .info > label{
+        font-size: 1.8vw;
+    }
+
+    .info > input{
+        font-size: 1.8vw;
+    }
+
+    .botao-login{
+        font-size: 1.6vw;
+    }
+
+    .link-cadastro{
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width: 750px){
+    form{
+        height: 55vh;
+    }
+    
+    .card-login > h1{
+        font-size: 3.3vw;
+    }
+
+    .info > label{
+        font-size: 2.7vw;
+    }
+
+    .info > input{
+        font-size: 2.7vw;
+    }
+
+    .botao-login{
+        font-size: 2.4vw;
+    }
+
+    .link-cadastro{
+        font-size: 2.55vw;
+    }
+}
+
+@media (max-width: 500px){
+    form{
+        height: 70vh;
+    }
+
+    .card-login > h1{
+        font-size: 4.4vw;
+        padding-bottom: 60px;
+        letter-spacing: 4px;
+    }
+    
+    .info > label{
+        margin-bottom: 20px;
+        font-size: 3.6vw;
+    }
+    
+    .info > input{
+        font-size: 3.6vw;
+    }
+    
+    .botao-login{
+        margin-top: 20%;
+        letter-spacing: 0.2vw;
+        font-size: 3.2vw;
+    }
+    
+    .link-cadastro{
+        color: white;
+        margin-top: 12%;
+        font-size: 3.4vw;
+    }
+}
+
+@media (max-width: 400px){
+    form{
+        height: 60vh;
+    }
+}

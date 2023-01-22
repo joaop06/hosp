@@ -1,0 +1,301 @@
+:root{
+/*Tema Light*/
+    --azul-base: #49c1fd;
+    --base: #0b2a5a;
+    --titulo: #00ccff;
+    --base-card: rgb(19, 69, 160);
+    --base-card-input: rgb(32, 137, 197);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;800;900&display=swap');
+
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--base);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-cadastro{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.left-cadastro{
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+
+.left-cadastro > h1{
+    color: var(--titulo);
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.left-cadastro > img{
+    width: 80%;
+}
+
+.right-cadastro{
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85vh;
+    box-sizing: border-box;
+}
+
+.card-cadastro{
+    display: flex;
+    box-sizing: border-box;
+    width: 34vw;
+    height: 100%;
+    margin-top: 0%;
+    background-color: var(--base-card);
+    border-radius: 20px;
+    padding: 5% 8% 8% 8%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-cadastro > h1{
+    color: white;
+    font-size: 1.4vw;
+    margin: 0;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#nome-user{
+    display: flex;
+}
+
+#nome-user > #username{
+    margin-left: 5%;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin: 15px 0px;
+}
+
+.info > label{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.info > input{
+    outline: none;
+    border: none;
+    border-radius: 2em;
+    background-color: var(--base-card-input);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    box-shadow: 0px 10px 40px #00000056;
+    font-size: 0.9vw;
+    color: white;
+}
+
+.info > input:hover{
+    background-color: rgb(101, 157, 189);
+    transition: 0.2s;
+}
+
+.info > input:focus{
+    outline: 2px solid white;
+    background-color: rgb(101, 157, 189);
+}
+
+.info > input::placeholder{
+    color: white;
+    opacity: 0.75;
+}
+
+.genero{
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    margin-top: 10%;
+}
+
+.genero > h2{
+    font-size: 1.1vw;
+    margin-bottom: 3%;
+}
+
+.grupo-genero{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+.genero-input > label{
+    padding-left: 0.2vw;
+}
+
+.genero-input{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.genero-input > input:hover, .genero-input > label:hover{
+    cursor: pointer;
+}
+
+.botao-cadastro{
+    width: 100%;
+    padding: 3%;
+    margin-top: 10%;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 0.95vw;
+    background-color: var(--azul-base);
+    box-shadow: 0px 10px 40px -12px #00000056;
+    box-sizing: border-box;
+}
+
+.link-login{
+    color: white;
+    margin-top: 6%;
+    font-size: 1vw;
+}
+
+.link-login > span > a{
+    text-decoration: underline;
+    color: var(--titulo);
+}
+
+@media (min-height: 1081px){
+    form{
+        height: 70vh;
+    }
+}
+
+@media (max-height: 800px){
+    .right-cadastro{
+        height: 100%;
+    }
+
+    form{
+        max-height: 100%;
+    }
+
+    .card-cadastro{
+        max-height: 100%;
+    }
+}
+
+
+@media (max-width: 1450px){
+    .main-cadastro{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+    }
+    
+    .left-cadastro{
+        display: none;
+    }
+    
+    .right-cadastro{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    
+    .card-cadastro{
+        width: 85vw;
+        margin-top: 0;
+        padding: 2%;
+    }
+    
+    .card-cadastro > h1{
+        letter-spacing: 3px;
+        font-size: 3.5vw;
+        margin: 0;
+        padding-bottom: 30px;
+        
+    }
+
+    .info{
+        align-items: center;
+    }
+    
+    .info > label{
+        font-size: 2.15vw;
+        width: 85%;
+    }
+    
+    .info > input{
+        font-size: 2vw;
+        width: 85%;
+    }
+    
+    .botao-cadastro{
+        letter-spacing: 7px;
+        font-size: 1.7vw;
+        width: 85%;
+        margin-top: 7%;
+        padding: 1.7vw;
+    }
+    
+    .link-login{
+        font-size: 1.85vw;
+    }
+}
