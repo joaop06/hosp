@@ -165,6 +165,7 @@ form{
     color: var(--titulo);
 }
 
+/*Ajustes de Largura*/
 @media (max-width: 1500px){
     form{
         height: 50vh;
@@ -272,7 +273,6 @@ form{
     }
     
     .link-cadastro{
-        color: white;
         margin-top: 12%;
         font-size: 3.4vw;
     }
@@ -282,4 +282,345 @@ form{
     form{
         height: 60vh;
     }
+}
+
+
+/*Ajuste Altura: min-width: 1501px*/
+@media (min-width: 1501px) and (max-height: 800px){
+    form{
+        height: 80vh;
+    }
+
+}
+
+@media (min-width: 1501px) and (max-height: 600px){
+    .left-login > img{
+        width: 70%;
+    }
+    
+    .card-login > h1{
+        font-size: 3.8vh;
+        padding-bottom: 5px;
+    }
+    
+    .info > label{
+        margin-bottom: 10px;
+        font-size: 2.8vh;
+    }
+    
+    .info > input{
+        font-size: 2.5vh;
+    }
+    
+    .botao-login{
+        letter-spacing: 0.1vh;
+        font-size: 2.8vh;
+        margin-top: 5%;
+    }
+    
+    .link-cadastro{
+        margin-top: 6%;
+        font-size: 2.8vh;
+    }
+}
+
+@media (min-width: 1501px) and (max-height: 500px){
+    .left-login > h1{
+        font-size: 7vh;
+    }
+    
+    .left-login > img{
+        width: 55%;
+    }
+    
+    form{
+        height: 90vh;
+    }
+
+    .card-login > h1{
+        font-size: 4vh;
+        padding-bottom: 10px;
+    }
+    
+    .info > label{
+        margin-bottom: 7px;
+        font-size: 3.2vh;
+    }
+    
+    .info > input{
+        font-size: 2.5vh;
+    }
+    
+    .botao-login{
+        margin-top: 5%;
+        font-size: 3vh;
+    }
+    
+    .link-cadastro{
+        margin-top: 7%;
+        font-size: 3.2vh;
+    }
+}
+
+@media (min-width: 1501px) and (max-height: 400px){
+    .left-login > h1{
+        font-size: 7vh;
+    }
+    
+    .left-login > img{
+        width: 40%;
+    }
+    
+    form{
+        height: 90vh;
+    }
+
+    .card-login > h1{
+        font-size: 3.3vh;
+        padding-bottom: 5px;
+    }
+    
+    .info > label{
+        margin-bottom: 4px;
+        font-size: 2.8vh;
+    }
+    
+    .info > input{
+        font-size: 2.5vh;
+        padding: 1.8%;
+    }
+    
+    .botao-login{
+        margin-top: 2%;
+        font-size: 2.8vh;
+        padding: 1.8%;
+    }
+    
+    .link-cadastro{
+        margin-top: 4%;
+        font-size: 2.8vh;
+    }
+}
+
+@media (min-width: 1501px) and (max-height: 300px){
+    .left-login > h1{
+        font-size: 7.5vh;
+    }
+    
+    .left-login > img{
+        width: 35%;
+    }
+    
+    form{
+        height: 90vh;
+    }
+
+    .card-login > h1{
+        font-size: 3.3vh;
+        padding-bottom: 10px;
+    }
+    
+    .info > label{
+        margin-bottom: 4px;
+        font-size: 2.5vh;
+    }
+    
+    .info > input{
+        font-size: 2.2vh;
+        padding: 1.5%;
+    }
+    
+    .botao-login{
+        margin-top: 2%;
+        font-size: 2.8vh;
+        padding: 1.8%;
+    }
+    
+    .link-cadastro{
+        margin-top: 3%;
+        font-size: 2.8vh;
+    }
+}
+
+/*Ajuste Altura: max-width: 1500px*/
+@media (max-width: 1500px) and (max-height: 800px){
+    form{
+        height: 65vh;
+    }
+}
+
+@media (max-width: 1500px) and (max-height: 600px){
+    .left-login > img{
+        width: 80%;
+    }
+    
+    form{
+        height: 75vh;
+    }
+}
+
+@media (max-width: 1500px) and (max-height: 500px){
+    .left-login > img{
+        width: 75%;
+    }
+    
+    form{
+        height: 85vh;
+    }
+
+    .card-login > h1{
+        font-size: 4vh;
+        padding-bottom: 10px;
+    }
+    
+    .info > label{
+        margin-bottom: 10px;
+        font-size: 3.5vh;
+    }
+    
+    .info > input{
+        font-size: 3.2vh;
+    }
+    
+    .botao-login{
+        margin-top: 5%;
+        font-size: 3.2vh;
+    }
+    
+    .link-cadastro{
+        margin-top: 5%;
+        font-size: 4vh;
+    }
+}
+
+@media (max-width: 1500px) and (max-height: 400px){
+    .left-login > img{
+        width: 50%;
+    }
+    
+    form{
+        height: 93vh;
+    }
+
+    .card-login > h1{
+        font-size: 3.8vh;
+        padding-bottom: 10px;
+    }
+    
+    .info > label{
+        margin-bottom: 5px;
+        font-size: 3.3vh;
+    }
+    
+    .info > input{
+        font-size: 3vh;
+    }
+    
+    .botao-login{
+        margin-top: 3%;
+        font-size: 3vh;
+    }
+    
+    .link-cadastro{
+        margin-top: 3%;
+        font-size: 3.8vh;
+    }
+}
+
+@media (max-width: 1500px) and (max-height: 300px){
+    .left-login > img{
+        width: 35%;
+    }
+
+    form{
+        height: 95vh;
+    }
+
+    .card-login > h1{
+        font-size: 3.8vh;
+        padding-bottom: 10px;
+    }
+    
+    .info > label{
+        margin-bottom: 5px;
+        font-size: 3.3vh;
+    }
+    
+    .info > input{
+        font-size: 3vh;
+    }
+    
+    .botao-login{
+        margin-top: 3.5%;
+        font-size: 3vh;
+    }
+    
+    .link-cadastro{
+        margin-top: 5%;
+        font-size: 3.8vh;
+    }
+}
+
+
+/*Ajuste Altura: max-width: 1000px*/
+@media (max-width: 1000px) and (max-height: 800px){
+
+}
+
+@media (max-width: 1000px) and (max-height: 600px){
+
+}
+
+@media (max-width: 1000px) and (max-height: 500px){
+
+}
+
+@media (max-width: 1000px) and (max-height: 400px){
+
+}
+
+@media (max-width: 1000px) and (max-height: 300px){
+
+}
+
+/*Ajuste Altura: max-width: 750px*/
+@media (max-width: 750px) and (max-height: 800px){
+
+}
+
+@media (max-width: 750px) and (max-height: 600px){
+
+}
+
+@media (max-width: 750px) and (max-height: 500px){
+
+}
+
+@media (max-width: 750px) and (max-height: 400px){
+
+}
+
+@media (max-width: 750px) and (max-height: 300px){
+
+}
+
+/*Ajuste Altura: max-width: 500px*/
+@media (max-width: 500px) and (max-height: 800px){
+
+}
+
+@media (max-width: 500px) and (max-height: 600px){
+
+}
+
+@media (max-width: 500px) and (max-height: 500px){
+
+}
+
+@media (max-width: 500px) and (max-height: 400px){
+
+}
+
+@media (max-width: 500px) and (max-height: 300px){
+
 }
